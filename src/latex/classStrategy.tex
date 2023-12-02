@@ -1,0 +1,177 @@
+\hypertarget{classStrategy}{
+\section{Strategy Class Reference}
+\label{classStrategy}\index{Strategy@{Strategy}}
+}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries BallArea} \{ \par
+{\bfseries BA\_\-CrossBlock}, 
+{\bfseries BA\_\-DribbleBlock}, 
+{\bfseries BA\_\-DribbleAttack}, 
+{\bfseries BA\_\-Cross}, 
+\par
+{\bfseries BA\_\-Stopper}, 
+{\bfseries BA\_\-DefMidField}, 
+{\bfseries BA\_\-OffMidField}, 
+{\bfseries BA\_\-ShootChance}, 
+\par
+{\bfseries BA\_\-Danger}, 
+{\bfseries BA\_\-None}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classStrategy_ad4cc05ea4386910b5382d33bea06b44d}{
+bool {\bfseries init} (rcsc::CmdLineParser \&cmd\_\-parser)}
+\label{classStrategy_ad4cc05ea4386910b5382d33bea06b44d}
+
+\item 
+\hypertarget{classStrategy_a27bbcbeae2799df65277e94e534f3b75}{
+bool {\bfseries read} (const std::string \&config\_\-dir)}
+\label{classStrategy_a27bbcbeae2799df65277e94e534f3b75}
+
+\item 
+\hypertarget{classStrategy_a32ecd0b1d190747a1a2301ff3c944f41}{
+void {\bfseries update} (const rcsc::WorldModel \&wm)}
+\label{classStrategy_a32ecd0b1d190747a1a2301ff3c944f41}
+
+\item 
+\hypertarget{classStrategy_a311abc0d6465b60ddd8cf554e5b49bdb}{
+void {\bfseries exchangeRole} (const int unum0, const int unum1)}
+\label{classStrategy_a311abc0d6465b60ddd8cf554e5b49bdb}
+
+\item 
+\hypertarget{classStrategy_a9b79574735f069eb409b6a9b9bbafb44}{
+int {\bfseries goalieUnum} () const }
+\label{classStrategy_a9b79574735f069eb409b6a9b9bbafb44}
+
+\item 
+\hypertarget{classStrategy_ac2a79ee57ebb4b934323929449f4a148}{
+int {\bfseries roleNumber} (const int unum) const }
+\label{classStrategy_ac2a79ee57ebb4b934323929449f4a148}
+
+\item 
+\hypertarget{classStrategy_a056a53d6058137850847df615b16cb9b}{
+bool {\bfseries isMarkerType} (const int unum) const }
+\label{classStrategy_a056a53d6058137850847df615b16cb9b}
+
+\item 
+\hypertarget{classStrategy_afb72d924b4d06f4fd045e65087c008eb}{
+SoccerRole::Ptr {\bfseries createRole} (const int unum, const rcsc::WorldModel \&wm) const }
+\label{classStrategy_afb72d924b4d06f4fd045e65087c008eb}
+
+\item 
+\hypertarget{classStrategy_aa69976a81adf1b045169c0e8d258bc67}{
+PositionType {\bfseries getPositionType} (const int unum) const }
+\label{classStrategy_aa69976a81adf1b045169c0e8d258bc67}
+
+\item 
+\hypertarget{classStrategy_a058355414bff1d22db01367262678045}{
+rcsc::Vector2D {\bfseries getPosition} (const int unum) const }
+\label{classStrategy_a058355414bff1d22db01367262678045}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classStrategy_ad3df0e2f1c88bd8133440d185e56bf3e}{
+static \hyperlink{classStrategy}{Strategy} \& {\bfseries instance} ()}
+\label{classStrategy_ad3df0e2f1c88bd8133440d185e56bf3e}
+
+\item 
+\hypertarget{classStrategy_a57744ca5576b9d3294700bcef202d0a2}{
+static const \hyperlink{classStrategy}{Strategy} \& {\bfseries i} ()}
+\label{classStrategy_a57744ca5576b9d3294700bcef202d0a2}
+
+\item 
+\hypertarget{classStrategy_a7025b56459c9c656c2229ce2583d8f4b}{
+static BallArea {\bfseries get\_\-ball\_\-area} (const rcsc::WorldModel \&wm)}
+\label{classStrategy_a7025b56459c9c656c2229ce2583d8f4b}
+
+\item 
+\hypertarget{classStrategy_a922b98ce680d2fd5157466b34d245e1f}{
+static BallArea {\bfseries get\_\-ball\_\-area} (const rcsc::Vector2D \&ball\_\-pos)}
+\label{classStrategy_a922b98ce680d2fd5157466b34d245e1f}
+
+\item 
+\hypertarget{classStrategy_a31d8f50b1cfb151d92ace4af5e001935}{
+static double {\bfseries get\_\-normal\_\-dash\_\-power} (const rcsc::WorldModel \&wm)}
+\label{classStrategy_a31d8f50b1cfb151d92ace4af5e001935}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classStrategy_a6a5c18973819cdf83bf626e6a925adda}{
+static const std::string {\bfseries BEFORE\_\-KICK\_\-OFF\_\-CONF} = \char`\"{}before-\/kick-\/off.conf\char`\"{}}
+\label{classStrategy_a6a5c18973819cdf83bf626e6a925adda}
+
+\item 
+\hypertarget{classStrategy_a44c758b496f2a6641a081b922d741b2f}{
+static const std::string {\bfseries NORMAL\_\-FORMATION\_\-CONF} = \char`\"{}normal-\/formation.conf\char`\"{}}
+\label{classStrategy_a44c758b496f2a6641a081b922d741b2f}
+
+\item 
+\hypertarget{classStrategy_aba6ec73bfe445b1cd7214a56bfd711ee}{
+static const std::string {\bfseries DEFENSE\_\-FORMATION\_\-CONF} = \char`\"{}defense-\/formation.conf\char`\"{}}
+\label{classStrategy_aba6ec73bfe445b1cd7214a56bfd711ee}
+
+\item 
+\hypertarget{classStrategy_affdd652a46eab297bc5f47ddcb18c678}{
+static const std::string {\bfseries OFFENSE\_\-FORMATION\_\-CONF} = \char`\"{}offense-\/formation.conf\char`\"{}}
+\label{classStrategy_affdd652a46eab297bc5f47ddcb18c678}
+
+\item 
+\hypertarget{classStrategy_a0924312bf675c5c456d7f2439d7f707a}{
+static const std::string {\bfseries GOAL\_\-KICK\_\-OPP\_\-FORMATION\_\-CONF} = \char`\"{}goal-\/kick-\/opp.conf\char`\"{}}
+\label{classStrategy_a0924312bf675c5c456d7f2439d7f707a}
+
+\item 
+\hypertarget{classStrategy_abab666aace1367c066767138d5727355}{
+static const std::string {\bfseries GOAL\_\-KICK\_\-OUR\_\-FORMATION\_\-CONF} = \char`\"{}goal-\/kick-\/our.conf\char`\"{}}
+\label{classStrategy_abab666aace1367c066767138d5727355}
+
+\item 
+\hypertarget{classStrategy_aeadd7f63fd62fba7dc94ef6ae6b41f1f}{
+static const std::string {\bfseries GOALIE\_\-CATCH\_\-OPP\_\-FORMATION\_\-CONF} = \char`\"{}goalie-\/catch-\/opp.conf\char`\"{}}
+\label{classStrategy_aeadd7f63fd62fba7dc94ef6ae6b41f1f}
+
+\item 
+\hypertarget{classStrategy_af3aeda8f1e23fe85a2ce2747bc4eced4}{
+static const std::string {\bfseries GOALIE\_\-CATCH\_\-OUR\_\-FORMATION\_\-CONF} = \char`\"{}goalie-\/catch-\/our.conf\char`\"{}}
+\label{classStrategy_af3aeda8f1e23fe85a2ce2747bc4eced4}
+
+\item 
+\hypertarget{classStrategy_ada9b5c0a838ed359699fe16ff297a4ca}{
+static const std::string {\bfseries KICKIN\_\-OUR\_\-FORMATION\_\-CONF} = \char`\"{}kickin-\/our-\/formation.conf\char`\"{}}
+\label{classStrategy_ada9b5c0a838ed359699fe16ff297a4ca}
+
+\item 
+\hypertarget{classStrategy_aaf5a083a27323b29e7e1440cc9e16bf6}{
+static const std::string {\bfseries SETPLAY\_\-OPP\_\-FORMATION\_\-CONF} = \char`\"{}setplay-\/opp-\/formation.conf\char`\"{}}
+\label{classStrategy_aaf5a083a27323b29e7e1440cc9e16bf6}
+
+\item 
+\hypertarget{classStrategy_a7220aab488d2ea1d5492893d6d3cae69}{
+static const std::string {\bfseries SETPLAY\_\-OUR\_\-FORMATION\_\-CONF} = \char`\"{}setplay-\/our-\/formation.conf\char`\"{}}
+\label{classStrategy_a7220aab488d2ea1d5492893d6d3cae69}
+
+\item 
+\hypertarget{classStrategy_a9263b1a870e1fc3e73ad22f9fd617bb4}{
+static const std::string {\bfseries INDIRECT\_\-FREEKICK\_\-OPP\_\-FORMATION\_\-CONF} = \char`\"{}indirect-\/freekick-\/opp-\/formation.conf\char`\"{}}
+\label{classStrategy_a9263b1a870e1fc3e73ad22f9fd617bb4}
+
+\item 
+\hypertarget{classStrategy_aa03ab3bf6235fb2458b6a609373493d4}{
+static const std::string {\bfseries INDIRECT\_\-FREEKICK\_\-OUR\_\-FORMATION\_\-CONF} = \char`\"{}indirect-\/freekick-\/our-\/formation.conf\char`\"{}}
+\label{classStrategy_aa03ab3bf6235fb2458b6a609373493d4}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{strategy_8h}{strategy.h}\item 
+\hyperlink{strategy_8cpp}{strategy.cpp}\end{DoxyCompactItemize}

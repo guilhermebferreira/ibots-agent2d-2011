@@ -1,0 +1,96 @@
+\hypertarget{classSoccerRole}{
+\section{SoccerRole Class Reference}
+\label{classSoccerRole}\index{SoccerRole@{SoccerRole}}
+}
+
+
+abstruct soccer role  
+
+
+
+
+{\ttfamily \#include $<$soccer\_\-role.h$>$}
+
+Inheritance diagram for SoccerRole:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{classSoccerRole}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classSoccerRole_a70d140c9e8534390675b2e61c4f0348b}{
+typedef boost::shared\_\-ptr$<$ \hyperlink{classSoccerRole}{SoccerRole} $>$ {\bfseries Ptr}}
+\label{classSoccerRole_a70d140c9e8534390675b2e61c4f0348b}
+
+\item 
+\hypertarget{classSoccerRole_ad047a3535773bf97e9ba3d16b9e998dc}{
+typedef Ptr($\ast$ {\bfseries Creator} )()}
+\label{classSoccerRole_ad047a3535773bf97e9ba3d16b9e998dc}
+
+\item 
+\hypertarget{classSoccerRole_a00275711107e0b313b811b98dea53dfa}{
+typedef rcss::Factory$<$ Creator, std::string $>$ {\bfseries Creators}}
+\label{classSoccerRole_a00275711107e0b313b811b98dea53dfa}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classSoccerRole_a9af9d00d256d8692dffca4ab4d3edae4}{
+virtual \hyperlink{classSoccerRole_a9af9d00d256d8692dffca4ab4d3edae4}{$\sim$SoccerRole} ()}
+\label{classSoccerRole_a9af9d00d256d8692dffca4ab4d3edae4}
+
+\begin{DoxyCompactList}\small\item\em destructor \item\end{DoxyCompactList}\item 
+\hypertarget{classSoccerRole_a4f04d7b591a6e68f580cb3e199854970}{
+virtual bool \hyperlink{classSoccerRole_a4f04d7b591a6e68f580cb3e199854970}{execute} (rcsc::PlayerAgent $\ast$agent)=0}
+\label{classSoccerRole_a4f04d7b591a6e68f580cb3e199854970}
+
+\begin{DoxyCompactList}\small\item\em decide action \item\end{DoxyCompactList}\item 
+virtual bool \hyperlink{classSoccerRole_ad4a6535ab16a5702939791592134783a}{acceptExecution} (const rcsc::WorldModel \&world)
+\begin{DoxyCompactList}\small\item\em override action or use default behavior \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classSoccerRole_a87bad2e3271d31ae80891d1c7ccb17b5}{
+static Creators \& {\bfseries creators} ()}
+\label{classSoccerRole_a87bad2e3271d31ae80891d1c7ccb17b5}
+
+\item 
+\hypertarget{classSoccerRole_aed4c3ae8f754b79511e31cb5112a7801}{
+static Ptr {\bfseries create} (const std::string \&name)}
+\label{classSoccerRole_aed4c3ae8f754b79511e31cb5112a7801}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+abstruct soccer role 
+
+\subsection{Member Function Documentation}
+\hypertarget{classSoccerRole_ad4a6535ab16a5702939791592134783a}{
+\index{SoccerRole@{SoccerRole}!acceptExecution@{acceptExecution}}
+\index{acceptExecution@{acceptExecution}!SoccerRole@{SoccerRole}}
+\subsubsection[{acceptExecution}]{\setlength{\rightskip}{0pt plus 5cm}bool SoccerRole::acceptExecution (
+\begin{DoxyParamCaption}
+\item[{const rcsc::WorldModel \&}]{ world}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classSoccerRole_ad4a6535ab16a5702939791592134783a}
+
+
+override action or use default behavior 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em world}]world model \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if intend to use \hyperlink{classSoccerRole_a4f04d7b591a6e68f580cb3e199854970}{SoccerRole::execute()}, false if use default behavior override action or use default behavior 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{soccer__role_8h}{soccer\_\-role.h}\item 
+\hyperlink{soccer__role_8cpp}{soccer\_\-role.cpp}\end{DoxyCompactItemize}
